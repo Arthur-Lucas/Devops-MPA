@@ -50,6 +50,9 @@
     "categories": {
       "storage": {
         "users": {}
+      },
+      "auth": {
+        "devopsmpa274fb0d7f": {}
       }
     }
   }
