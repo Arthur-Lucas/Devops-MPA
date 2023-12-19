@@ -23,6 +23,11 @@
       "StackName": "amplify-devopsmpa2-devarthur-101534",
       "StackId": "arn:aws:cloudformation:eu-west-3:194672992331:stack/amplify-devopsmpa2-devarthur-101534/2aa18ee0-9e4f-11ee-a2cd-0eb6386c148e",
       "AmplifyAppId": "d1h796dkokxqws"
+    },
+    "categories": {
+      "storage": {
+        "users": {}
+      }
     }
   }
 }
