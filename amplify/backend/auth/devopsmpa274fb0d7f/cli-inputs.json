@@ -24,13 +24,17 @@
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
+      "family_name",
+      "name",
       "email"
     ],
     "userpoolClientReadAttributes": [
-      "email"
+      "email",
+      "family_name",
+      "name"
     ],
     "userpoolClientLambdaRole": "devops74fb0d7f_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
+    "userpoolClientSetAttributes": true,
     "sharedId": "74fb0d7f",
     "resourceName": "devopsmpa274fb0d7f",
     "authSelections": "userPoolOnly",
@@ -78,7 +82,7 @@
       "Ref": "AWS::StackId"
     },
     "permissions": [],
-    "authProviders": [],
-    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostConfirmation\",\n    \"lambdaFunctionName\": \"devopsmpa274fb0d7fPostConfirmation\"\n  }\n]"
+    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostConfirmation\",\n    \"lambdaFunctionName\": \"devopsmpa274fb0d7fPostConfirmation\"\n  }\n]",
+    "authProviders": []
   }
 }

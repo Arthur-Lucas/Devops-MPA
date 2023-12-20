@@ -58,7 +58,7 @@
       "function": {
         "devopsmpa274fb0d7fPostConfirmation": {
           "deploymentBucketName": "amplify-devopsmpa2-devmatis-110852-deployment",
-          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-4c637464513952657178-build.zip"
+          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-703057336c5356774b7a-build.zip"
         }
       }
     }

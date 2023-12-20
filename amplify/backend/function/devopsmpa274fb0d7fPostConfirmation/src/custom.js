@@ -6,18 +6,17 @@
   try {
     const dynamoDB = new AWS.DynamoDB.DocumentClient();
     const userTableName = process.env.STORAGE_USERS_NAME
-    console.log('userTableName', userTableName)
-    console.log('event', event.userName)
-
     const params = {
       TableName: userTableName,
       Item: {
         id: event.userName,
+        email: event.request.userAttributes.email,
+        firstname: event.request.userAttributes.name,
+        lastname: event.request.userAttributes.family_name
       },
     };
     await dynamoDB.put(params).promise();
-
-    console.log('succés');
+    console.log('user added');
     return event;
   } catch (error) {
     console.error('Erreur lors de l\'insertion dans DynamoDB', error);
