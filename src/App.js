@@ -8,20 +8,14 @@ import awsExports from './aws-exports';
 Amplify.configure(awsExports);
 
 export default function App() {
-  const customButtonStyle = {
-    backgroundColor: 'blue',
-    borderRadius: '20px',
-    padding:'0.5rem 1rem',
-    border: 'none',
-    color: 'white'
-  };
+  
 
   return (
     <Authenticator>
       {({ signOut, user }) => (
         <main>
           <h1>Hello {user.username}</h1>
-          <button style={customButtonStyle} onClick={signOut}>Sign out</button>
+          <button  onClick={signOut}>Sign out</button>
         </main>
       )}
     </Authenticator>

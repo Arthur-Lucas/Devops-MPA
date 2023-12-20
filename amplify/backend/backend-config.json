@@ -40,8 +40,37 @@
   "function": {
     "devopsmpa274fb0d7fPostConfirmation": {
       "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "users"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_devopsmpa274fb0d7fPostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "devopsmpa274fb0d7fPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_devopsmpa274fb0d7fPostConfirmation_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "devopsmpa274fb0d7fPostConfirmation"
+        }
+      ]
     }
   },
   "storage": {

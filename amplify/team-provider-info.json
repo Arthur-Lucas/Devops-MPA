@@ -45,7 +45,8 @@
       "UnauthRoleName": "amplify-devopsmpa2-devmatis-110852-unauthRole",
       "StackName": "amplify-devopsmpa2-devmatis-110852",
       "StackId": "arn:aws:cloudformation:eu-west-3:194672992331:stack/amplify-devopsmpa2-devmatis-110852/9c952460-9e56-11ee-b017-0a5ed02e56d8",
-      "AmplifyAppId": "d1h796dkokxqws"
+      "AmplifyAppId": "d1h796dkokxqws",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-devopsmpa2-devmatis-110852-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "storage": {
@@ -55,7 +56,10 @@
         "devopsmpa274fb0d7f": {}
       },
       "function": {
-        "devopsmpa274fb0d7fPostConfirmation": {}
+        "devopsmpa274fb0d7fPostConfirmation": {
+          "deploymentBucketName": "amplify-devopsmpa2-devmatis-110852-deployment",
+          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-4c637464513952657178-build.zip"
+        }
       }
     }
   }
