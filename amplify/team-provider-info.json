@@ -9,11 +9,21 @@
       "UnauthRoleName": "amplify-devopsmpa2-devpierre-111534-unauthRole",
       "StackName": "amplify-devopsmpa2-devpierre-111534",
       "StackId": "arn:aws:cloudformation:eu-west-3:194672992331:stack/amplify-devopsmpa2-devpierre-111534/8c6337c0-9e57-11ee-8717-0a066053a136",
-      "AmplifyAppId": "d1h796dkokxqws"
+      "AmplifyAppId": "d1h796dkokxqws",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-devopsmpa2-devpierre-111534-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "storage": {
         "users": {}
+      },
+      "auth": {
+        "devopsmpa274fb0d7f": {}
+      },
+      "function": {
+        "devopsmpa274fb0d7fPostConfirmation": {
+          "deploymentBucketName": "amplify-devopsmpa2-devpierre-111534-deployment",
+          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-683046454d557472796b-build.zip"
+        }
       }
     }
   },
@@ -27,7 +37,8 @@
       "UnauthRoleName": "amplify-devopsmpa2-devarthur-101534-unauthRole",
       "StackName": "amplify-devopsmpa2-devarthur-101534",
       "StackId": "arn:aws:cloudformation:eu-west-3:194672992331:stack/amplify-devopsmpa2-devarthur-101534/2aa18ee0-9e4f-11ee-a2cd-0eb6386c148e",
-      "AmplifyAppId": "d1h796dkokxqws"
+      "AmplifyAppId": "d1h796dkokxqws",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-devopsmpa2-devarthur-101534-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "storage": {
@@ -38,8 +49,8 @@
       },
       "function": {
         "devopsmpa274fb0d7fPostConfirmation": {
-          "deploymentBucketName": "amplify-devopsmpa2-devmatis-110852-deployment",
-          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-703057336c5356774b7a-build.zip"
+          "deploymentBucketName": "amplify-devopsmpa2-devarthur-101534-deployment",
+          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-683046454d557472796b-build.zip"
         }
       }
     }
