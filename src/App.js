@@ -68,12 +68,27 @@ export default function App() {
         setUser(user);
         return (
           <main>
-            <h1>Hello {user.username}</h1>
-            {/* Affichez les données de l'utilisateur */}
-            {userData && <p>Firstname : {userData.firstname}</p>}
-            {userData && <p>Lastname : {userData.lastname}</p>}
-            {userData && <p>Email : {userData.email}</p>}
-            <button onClick={signOut}>Sign out</button>
+            <nav>
+              <button className="btn" onClick={signOut}>Sign out</button>
+            </nav>
+            {
+              !userData && 
+              <div class="circle-border">
+                <div class="circle-core"></div>
+              </div>  
+            }
+            {userData &&
+            <div className="user">
+              <img className="user-image" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"/>
+               <p className="user-name">{!userData.firstname ? 'firstname undefined' : userData.firstname}, {!userData.lastname ? 'lastname undefined' : userData.lastname}</p>
+              <div className="user-username__section">
+                <p className="user-username">@{user.username}</p> 
+                <i class="fa fa-clipboard"></i>
+              </div>
+              <p className="user-email">{!userData.email ? 'email undefined' : userData.email}</p>
+              <p className="user-company">{!userData.company ? 'company undefined' : userData.company}</p>
+              <p className="user-business-sector">{userData.email}</p>
+            </div>}
           </main>
         );
       }}
