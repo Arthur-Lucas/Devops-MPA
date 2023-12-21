@@ -72,6 +72,17 @@
     },
     "devopsmpa2getdetailsuser": {
       "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "users"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }

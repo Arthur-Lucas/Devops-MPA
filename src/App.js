@@ -46,13 +46,14 @@ export default function App() {
         // console.log(user);
         const apiResponse = await get({
           apiName: "apiGetDetailsUser",
-          path: `/user/${user.username}`,
+          path: `/getuser`,
         });
         const response = await apiResponse.response;
-        console.log(response);
+        const data = await response.body.json();
+        await setUserData(data);
       } catch (error) {
         console.error(
-          "Erreur lors de la récupération des données de l'utilisateur",
+          "Erreur lors de la récupération des données de l'utilisateur front \n",
           error
         );
       }
@@ -69,7 +70,9 @@ export default function App() {
           <main>
             <h1>Hello {user.username}</h1>
             {/* Affichez les données de l'utilisateur */}
-            {userData && <p>User Data: {JSON.stringify(userData)}</p>}
+            {userData && <p>Firstname : {userData.firstname}</p>}
+            {userData && <p>Lastname : {userData.lastname}</p>}
+            {userData && <p>Email : {userData.email}</p>}
             <button onClick={signOut}>Sign out</button>
           </main>
         );

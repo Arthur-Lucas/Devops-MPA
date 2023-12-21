@@ -1,11 +1,14 @@
 {
   "version": 1,
   "paths": {
-    "/user/{id}": {
-      "name": "/user/{id}",
+    "/getuser": {
+      "name": "/getuser",
       "lambdaFunction": "devopsmpa2getdetailsuser",
       "permissions": {
-        "setting": "open"
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
       }
     }
   }
