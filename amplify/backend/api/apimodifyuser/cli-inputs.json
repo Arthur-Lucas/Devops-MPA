@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "paths": {
+    "/updateUser": {
+      "name": "/updateUser",
+      "lambdaFunction": "devopsmpa2usermodify",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    }
+  }
+}

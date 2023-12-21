@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/modifyuser": {
+      "name": "/modifyuser",
+      "lambdaFunction": "devopsmpa2usermodify",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

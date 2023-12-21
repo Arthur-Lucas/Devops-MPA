@@ -13,6 +13,9 @@
     },
     "apiGetDetailsUser": {
       "Type": "String"
+    },
+    "apimodify": {
+      "Type": "String"
     }
   },
   "Conditions": {
