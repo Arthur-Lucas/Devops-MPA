@@ -84,16 +84,21 @@
       "function": {
         "devopsmpa274fb0d7fPostConfirmation": {
           "deploymentBucketName": "amplify-devopsmpa2-matisbis-150235-deployment",
-          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-4251787674626d756241-build.zip"
+          "s3Key": "amplify-builds/devopsmpa274fb0d7fPostConfirmation-77786b36417a6d665050-build.zip"
         },
         "devopsmpa2getdetailsuser": {
           "deploymentBucketName": "amplify-devopsmpa2-matisbis-150235-deployment",
           "s3Key": "amplify-builds/devopsmpa2getdetailsuser-4857584f51714f485171-build.zip"
         },
-        "users": {}
+        "users": {},
+        "devopsmpa2usermodify": {
+          "deploymentBucketName": "amplify-devopsmpa2-matisbis-150235-deployment",
+          "s3Key": "amplify-builds/devopsmpa2usermodify-5036362f6459306a6932-build.zip"
+        }
       },
       "api": {
-        "apiGetDetailsUser": {}
+        "apiGetDetailsUser": {},
+        "apimodify": {}
       },
       "storage": {
         "users": {}

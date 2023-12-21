@@ -16,7 +16,6 @@
       },
     };
     await dynamoDB.put(params).promise();
-    console.log('user added');
     return event;
   } catch (error) {
     console.error('Erreur lors de l\'insertion dans DynamoDB', error);
