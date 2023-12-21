@@ -13,6 +13,20 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
+    },
+    "apimodify": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "devopsmpa2usermodify"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "auth": {
@@ -85,6 +99,22 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "devopsmpa2usermodify": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "users"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -117,6 +147,22 @@
         {
           "category": "function",
           "resourceName": "devopsmpa2getdetailsuser"
+        }
+      ]
+    },
+    "AMPLIFY_function_devopsmpa2usermodify_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "devopsmpa2usermodify"
+        }
+      ]
+    },
+    "AMPLIFY_function_devopsmpa2usermodify_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "devopsmpa2usermodify"
         }
       ]
     }
