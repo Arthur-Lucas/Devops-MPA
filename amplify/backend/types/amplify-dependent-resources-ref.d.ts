@@ -1,8 +1,17 @@
 export type AmplifyDependentResourcesAttributes = {
+  "api": {
+    "apimodifyuser": {
+      "ApiId": "string",
+      "ApiName": "string",
+      "RootUrl": "string"
+    }
+  },
   "auth": {
     "devopsmpa274fb0d7f": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
+      "IdentityPoolId": "string",
+      "IdentityPoolName": "string",
       "UserPoolArn": "string",
       "UserPoolId": "string",
       "UserPoolName": "string"
@@ -10,6 +19,13 @@ export type AmplifyDependentResourcesAttributes = {
   },
   "function": {
     "devopsmpa274fb0d7fPostConfirmation": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    },
+    "devopsmpa2usermodify": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
