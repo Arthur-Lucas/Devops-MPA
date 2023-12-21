@@ -63,7 +63,7 @@
         },
         "devopsmpa2getdetailsuser": {
           "deploymentBucketName": "amplify-devopsmpa2-devarthur-101534-deployment",
-          "s3Key": "amplify-builds/devopsmpa2getdetailsuser-4857584f51714f485171-build.zip"
+          "s3Key": "amplify-builds/devopsmpa2getdetailsuser-44463672446a752f3775-build.zip"
         }
       },
       "api": {
